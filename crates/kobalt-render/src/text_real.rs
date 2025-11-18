@@ -66,7 +66,7 @@ impl RealTextRenderer {
     pub fn new(device: &wgpu::Device, config: &wgpu::SurfaceConfiguration) -> Self {
         // Load default font (using a basic embedded font for now)
         // In a real app, you'd load from a file or embed a proper font
-        let font_data = include_bytes!("../../../assets/fonts/Roboto-Regular.ttf");
+        let font_data = include_bytes!("../assets/fonts/Roboto-Regular.ttf");
         let font = Font::from_bytes(&font_data[..], FontSettings::default())
             .expect("Failed to load font");
 
