@@ -1,0 +1,12 @@
+[package]
+name = "kobalt-widgets"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Official widget library for Kobalt UI framework"
+
+[dependencies]
+kobalt-core = { path = "../kobalt-core" }
+
+[dev-dependencies]

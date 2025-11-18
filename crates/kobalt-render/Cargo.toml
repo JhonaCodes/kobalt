@@ -1,0 +1,16 @@
+[package]
+name = "kobalt-render"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "WGPU-based rendering engine for Kobalt UI framework"
+
+[dependencies]
+kobalt-core = { path = "../kobalt-core" }
+wgpu = "27.0.1"
+bytemuck = { version = "1.14", features = ["derive"] }
+glam = "0.29"
+fontdue = "0.9.3"
+
+[dev-dependencies]

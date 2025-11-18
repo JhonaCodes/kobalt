@@ -1,0 +1,52 @@
+[package]
+name = "kobalt-examples"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Examples for Kobalt UI framework"
+publish = false
+
+[[example]]
+name = "simple_square"
+path = "examples/simple_square.rs"
+
+[[example]]
+name = "simple_text"
+path = "examples/simple_text.rs"
+
+[[example]]
+name = "hello_world"
+path = "examples/hello_world.rs"
+
+[[example]]
+name = "macro_syntax"
+path = "examples/macro_syntax.rs"
+
+[[example]]
+name = "full_macro_syntax"
+path = "examples/full_macro_syntax.rs"
+
+[[example]]
+name = "style_syntax"
+path = "examples/style_syntax.rs"
+
+[[example]]
+name = "style_syntax_named"
+path = "examples/style_syntax_named.rs"
+
+[[example]]
+name = "macro_style"
+path = "examples/macro_style.rs"
+
+[[example]]
+name = "macro_ui_full"
+path = "examples/macro_ui_full.rs"
+
+[dependencies]
+kobalt = { path = "../.." }
+kobalt-core = { path = "../kobalt-core" }
+kobalt-render = { path = "../kobalt-render" }
+kobalt-runtime = { path = "../kobalt-runtime" }
+kobalt-widgets = { path = "../kobalt-widgets" }
+kobalt-macros = { path = "../kobalt-macros" }
