@@ -2,7 +2,7 @@
 name = "kobalt"
 version = "0.0.0"
 edition = "2024"
-description = "A modern UI framework for Mobile, Web and Desktop based on WGPU"
+description = "UI framework for Mobile, Web and Desktop based on WGPU"
 license = "MIT"
 publish = true
 
