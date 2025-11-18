@@ -7,7 +7,7 @@ authors.workspace = true
 description = "WGPU-based rendering engine for Kobalt UI framework"
 
 [dependencies]
-kobalt-core = { path = "../kobalt-core" }
+kobalt-core = { version = "0.0.2", path = "../kobalt-core" }
 wgpu = "27.0.1"
 bytemuck = { version = "1.14", features = ["derive"] }
 glam = "0.29"

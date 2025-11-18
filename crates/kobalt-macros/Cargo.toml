@@ -7,7 +7,7 @@ authors.workspace = true
 description = "Declarative macros for Kobalt UI framework"
 
 [dependencies]
-kobalt-widgets = { path = "../kobalt-widgets" }
-kobalt-runtime = { path = "../kobalt-runtime" }
+kobalt-widgets = { version = "0.0.2", path = "../kobalt-widgets" }
+kobalt-runtime = { version = "0.0.2", path = "../kobalt-runtime" }
 
 [dev-dependencies]

@@ -7,6 +7,6 @@ authors.workspace = true
 description = "Official widget library for Kobalt UI framework"
 
 [dependencies]
-kobalt-core = { path = "../kobalt-core" }
+kobalt-core = { version = "0.0.2", path = "../kobalt-core" }
 
 [dev-dependencies]

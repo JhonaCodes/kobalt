@@ -26,8 +26,8 @@ authors.workspace = true
 description = "A modern, declarative UI framework for Rust inspired by Flutter and Jetpack Compose"
 
 [dependencies]
-kobalt-core = { path = "crates/kobalt-core" }
-kobalt-render = { path = "crates/kobalt-render" }
-kobalt-runtime = { path = "crates/kobalt-runtime" }
-kobalt-widgets = { path = "crates/kobalt-widgets" }
-kobalt-macros = { path = "crates/kobalt-macros" }
+kobalt-core = { version = "0.0.2", path = "crates/kobalt-core" }
+kobalt-render = { version = "0.0.2", path = "crates/kobalt-render" }
+kobalt-runtime = { version = "0.0.2", path = "crates/kobalt-runtime" }
+kobalt-widgets = { version = "0.0.2", path = "crates/kobalt-widgets" }
+kobalt-macros = { version = "0.0.2", path = "crates/kobalt-macros" }
