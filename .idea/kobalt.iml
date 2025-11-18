@@ -2,6 +2,13 @@
 <module type="EMPTY_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/crates/kobalt-core/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/kobalt-examples/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/kobalt-examples/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/kobalt-macros/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/kobalt-render/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/kobalt-runtime/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/kobalt-widgets/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>

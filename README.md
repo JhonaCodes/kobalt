@@ -34,6 +34,60 @@ Let's see where this experiment takes us.
 
 Very early stages. Mostly just setting up the project structure and learning as I go. This is more of a learning journal than a production framework.
 
+**What's working (kinda):**
+- ✅ Desktop windows (via winit)
+- ✅ Basic WGPU rendering
+- ✅ Text rendering (with fontdue, a bit rough around the edges 😅)
+- ✅ Column layout with alignment and padding
+- ✅ Declarative macro syntax (app!, column!, text!)
+- ✅ Basic color and styling
+
+**What's not working (yet):**
+- ❌ Mobile (iOS/Android) - the whole point of this project! 😭
+- ❌ Most widgets (buttons, inputs, images, etc.)
+- ❌ State management
+- ❌ Navigation
+- ❌ Gestures/touch
+- ❌ Pretty much everything else
+
+## Quick Peek 👀
+
+> ⚠️ **Current Reality Check**: Right now, this only works on **Desktop** (Windows, macOS, Linux) using `winit`. Mobile support is the dream, but we're starting with desktop to get the foundations right! Baby steps! 🚶‍♂️
+>
+> ⚠️ **Syntax Disclaimer**: This is a *rough*, early prototype of what the syntax might look like. It's super basic and will probably change 100 times before stabilizing (if it ever does!). But hey, it gives you an idea of the direction!
+
+Here's how you'd build a simple **Desktop** UI with Kobalt's macro-based API (inspired by Flutter/Compose):
+
+```rust
+use kobalt::prelude::*;
+use kobalt_macros::column;
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    app! {
+        title: text!("My First Kobalt App"),
+        size: (800, 600),
+        background: Color::from_rgb8(20, 20, 30),
+        home: column! {
+            main_axis_alignment: MainAxisAlignment::Center,
+            cross_axis_alignment: CrossAxisAlignment::Center,
+            padding: EdgeInsets::all(20.0),
+            children: [
+                text!("Hello, Kobalt! 👋", size: 36.0, color: Color::WHITE),
+                text!("Built with Rust + WGPU", size: 24.0),
+                text!("Mobile-first UI framework")
+            ]
+        }
+    }
+}
+```
+
+**What you're seeing:**
+- 🎯 **Declarative macros** - `app!`, `column!`, `text!` for a clean, Flutter-like syntax
+- 📐 **Layout properties** - `main_axis_alignment`, `cross_axis_alignment`, `padding` (just like Compose!)
+- 🎨 **Inline styling** - Direct property setting like `size:` and `color:`
+
+This is just a taste! The API is evolving, but the goal is to make it feel natural for developers coming from Compose or Flutter.
+
 ## Goals (Maybe?)
 
 ### Core Framework
